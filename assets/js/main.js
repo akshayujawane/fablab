@@ -214,8 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
         : '<i class="fa-solid fa-moon"></i>';
     }
   };
-  const savedTheme = localStorage.getItem('fl_theme') ||
-    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+const savedTheme = localStorage.getItem('fl_theme') || 'light';
   applyTheme(savedTheme);
 
   if (themeBtn) {
